@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Favicon Grabber</title>
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript" href="app.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <h1 class="page-title">Fetch the Favicon of any website</h1>
+      <h4 class="page-subtitle"><i>A favicon is a website's icon that shows in a browser's tab when navigating.</i></h4>
+    </div>
+
+    <div class="form-container">
+      <div class="form">
+        <div class="label-input-container" id="url-container">
+          <label for="url">URL</label>
+          <input type="text" name="url" id="url" autofocus>
+        </div>
+
+        <div class="label-input-container" id="size-container">
+          <label for="size">Favicon Size</label>
+          <select name="size" id="size-select">
+            <option value="16">16x16</option>
+            <option value="32">32x32</option>
+            <option value="64">64x64</option>
+            <option value="128">128x128</option>
+            <option value="256">256x256</option>
+          </select>
+        </div>
+
+          <button class="submit-button button" id="submit-button">Get favicon</button>
+      </div>
+      <p class="error-message"></p>
+    </div>
+    
+    
+    <img class="favicon-output" src="" alt="">
+    
+    <footer>
+      <p>Quickly made by <a href="https://github.com/asty8926">Asty'</a></p>
+    </footer>
+  </div>
+
+</body>
+</html>
