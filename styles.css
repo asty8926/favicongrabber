@@ -35,6 +35,10 @@ body {
   margin-top: 3rem;
 }
 
+.header > .page-title .page-logo {
+  margin-right: .5rem;
+}
+
 .header > h1 {
   margin-bottom: -0.5rem
 }
@@ -123,6 +127,8 @@ footer {
   justify-content: center;
   
   min-height: 2rem;
+  
+  background-color: var(--bg-color);
 }
 
 .wrong-field {
