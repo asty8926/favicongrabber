@@ -14,16 +14,21 @@ function isValidURL(urlToPass) {
 }
 
 function parseDNS(urlToPass) {
-  const dnsRegex = new RegExp("");
-  return urlToPass.match(dnsRegex)[0]
+  const dnsRegex = new RegExp("^https?:\/\/(?:www\.)?([^:\/\n?]+)", "g");
+  /*return urlToPass.match(dnsRegex)[0]*/
+  return dnsRegex.exec(urlToPass)[1]
 }
 
 submitButton.addEventListener('click', () => {
   
   const inputEl = document.querySelector('input#url')
   inputEl.classList.remove("wrong-field")
+  
   const errorMessage = document.querySelector(".error-message")
+  const outputDNS = document.querySelector(".output-dns")
+  
   errorMessage.innerText = ""
+  outputDNS.innerText = ""
   
   const output = document.querySelector(".favicon-output")
   output.setAttribute("src", "")
@@ -52,7 +57,8 @@ submitButton.addEventListener('click', () => {
   
   console.log(`Clicked the button.\nInput is: ${input}\nOutput is: ${url}`)
   
-  
   output.setAttribute("src", url)
   output.setAttribute("alt", input)
+ 
+  outputDNS.innerText = parseDNS(input)
 })
