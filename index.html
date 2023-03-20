@@ -1,36 +1,49 @@
-<div class="app">
-  <div class="header">
-    <h1 class="page-title"><img class="page-logo" src="favicon.png" width="32">Fetch the Favicon of any website</h1>
-    <h4 class="page-subtitle"><i>A favicon is a website's icon that shows in a browser's tab when navigating.</i></h4>
-  </div>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Favicon Grabber</title>
 
-  <div class="form-container">
-    <div class="form">
-      <div class="label-input-container" id="url-container">
-        <label for="url">URL</label>
-        <input type="text" name="url" id="url" autofocus>
-      </div>
-
-      <div class="label-input-container" id="size-container">
-        <label for="size">Favicon Size</label>
-        <select name="size" id="size-select">
-          <option value="16">16x16</option>
-          <option value="32" selected="selected">32x32</option>
-          <!-- <option value="64">64x64</option>
-          <option value="128" selected="selected">128x128</option> -->
-        </select>
-      </div>
-
-        <button class="submit-button button" id="submit-button">Get favicon</button>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <script type="text/javascript" src="app.js" defer></script>
+</head>
+<body>
+    <div class="app">
+    <div class="header">
+      <h1 class="page-title"><img class="page-logo" src="https://github.com/asty8926/favicongrabber/blob/main/favicon.png?raw=true" width="32">Fetch the Favicon of any website</h1>
+      <h4 class="page-subtitle"><i>A favicon is a website's icon that shows in a browser's tab when navigating.</i></h4>
     </div>
-    <p class="error-message"></p>
+
+    <div class="form-container">
+      <div class="form">
+        <div class="label-input-container" id="url-container">
+          <label for="url">URL</label>
+          <input type="text" name="url" id="url" autofocus>
+        </div>
+
+        <div class="label-input-container" id="size-container">
+          <label for="size">Favicon Size</label>
+          <select name="size" id="size-select">
+            <option value="16">16x16</option>
+            <option value="32" selected="selected">32x32</option>
+            <!-- <option value="64">64x64</option>
+            <option value="128" selected="selected">128x128</option> -->
+          </select>
+        </div>
+
+          <button class="submit-button button" id="submit-button">Get favicon</button>
+      </div>
+      <p class="error-message"></p>
+    </div>
+    
+    
+    <img class="favicon-output" src="" alt="">
+    <h5 class="output-dns"></h5>
+    
+    <footer>
+      <p>Quickly made by <a href="https://github.com/asty8926">Asty'</a></p>
+    </footer>
   </div>
-  
-  
-  <img class="favicon-output" src="" alt="">
-  <h5 class="output-dns"></h5>
-  
-  <footer>
-    <p>Quickly made by <a href="https://github.com/asty8926">Asty'</a></p>
-  </footer>
-</div>
+
+</body>
+</html>
