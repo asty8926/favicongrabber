@@ -55,7 +55,7 @@ body {
   border-radius: .5rem;
   padding: 1.5rem;
   
-  margin-top: 3rem;
+  margin-top: 1rem;
   
   min-width: var(--form-width);
 }
@@ -112,7 +112,7 @@ select {
 
 .favicon-output {
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 footer {
