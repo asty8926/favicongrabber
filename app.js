@@ -45,13 +45,13 @@ submitButton.addEventListener('click', () => {
     return errorMessage.innerText = `You didn't specify any URL. Please provide one and retry.`
   } 
   
-  if(isValidURL(input) === false) {
+  /*if(isValidURL(input) === false) {
     inputEl.classList.add("wrong-field")
     return errorMessage.innerText = `The provided URL does not seem to be valid.
     Please provide a valid one.
     
     Example: https://google.com`
-  }
+  }*/
   
   let url = prefix + input + `&size=${sizeSelected}`
   
